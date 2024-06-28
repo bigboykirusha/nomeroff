@@ -1,33 +1,18 @@
 # nomeroff
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
+Имитация бекенда на MOKKY.DEV, данные номеров хранятся в формате:
+{
+        "id": 3,
+        "plateInfo": {
+            "letters": "ССС",
+            "numbers": "989",
+            "regionCode": "99"
+        },
+        "city": "Новосибирск",
+        "price": 4500,
+        "date": "2023-07-10",
+        "popularity": 2
+},
+Реализованы фильтрации по цене и дате, номерам палиндромам, номерам с одинаковыми цирфами и буквами, пагинация с подсчетом кол-ва страниц и кликабельными элементами на стороне клиента. 
+Не реализована фильтрация по чекбоксу "Первая десятка", т.к. я не понял, что это значит и по какому критерию должны фильтроваться номера.
+Vue 3 + TS + Tailwind + SCSS + AutoAnimate
