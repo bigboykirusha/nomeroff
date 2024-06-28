@@ -25,6 +25,7 @@ export const filterItems = (items: IItem[], filters: IFilters): IItem[] => {
 
       return (!filterOptions.sameLetters || new Set(letters).size === 1) &&
          (!filterOptions.sameNumbers || new Set(numbers).size === 1) &&
-         (!filterOptions.mirrorNumbers || numbers === numbers.split('').reverse().join(''));
+         (!filterOptions.mirrorNumbers || numbers === numbers.split('').reverse().join('')) &&
+         (!filterOptions.firstTen || (parseInt(numbers) >= 1 && parseInt(numbers) <= 10));
    });
 };
