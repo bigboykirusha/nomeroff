@@ -7,9 +7,16 @@ enum NAVIGATION_LINKS {
    SELL_FAST = 'Продать быстро'
 }
 
+export enum SortBy {
+   PriceAsc = 'price',
+   PriceDesc = '-price',
+   DateAsc = 'date',
+   DateDesc = '-date'
+}
+
 export const navigationLinks = [
    { text: NAVIGATION_LINKS.CATALOG, url: '/catalog' },
    { text: NAVIGATION_LINKS.DESIGN, url: '/design' },
    { text: NAVIGATION_LINKS.PLACE_AD, url: '/place-ad' },
-   { text: NAVIGATION_LINKS.SELL_FAST, url: 'sell' }
+   { text: NAVIGATION_LINKS.SELL_FAST, url: '/sell' }
 ];

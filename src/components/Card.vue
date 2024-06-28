@@ -15,7 +15,7 @@ defineProps({
       <p class="mb-1">{{ date }}</p>
       <CarNumberPlate :letters="plateInfo.letters" :numbers="plateInfo.numbers" :regionCode="plateInfo.regionCode" />
       <div class="flex justify-between">
-         <span class="mt-1">{{ city }}</span>
+         <span class="mt-1">г. {{ city }}</span>
          <span class="mt-1">{{ price }} руб.</span>
       </div>
    </div>
